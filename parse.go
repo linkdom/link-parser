@@ -2,9 +2,14 @@ package link
 
 import "io"
 
-type link struct {
+//represents a link in an HTML document
+type Link struct {
 	Href string
 	Text string
 }
 
-var r io.Reader
+//Parse will take in an HTML document and will return
+// a slice of links parsed from it.
+func Parse(r io.Reader) ([]Link, error){
+	return nil, nil
+}
