@@ -23,7 +23,7 @@ func main() {
 	r := strings.NewReader(exampleHtml)
 	links, err := link.Parse(r)
 	if err != nil {
-		fmt.Println(err)
+		panic(err)
 	}
 	fmt.Printf("%+v\n", links)
 }
